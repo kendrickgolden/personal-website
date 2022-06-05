@@ -1,0 +1,60 @@
+/*Setting general rules*/
+*{
+    box-sizing: border-box;
+    /*TODO: Find font that matches aesthetic*/
+    font-family: 'Times New Roman', Times, serif;
+    color:#000000
+}
+
+/*Set background color of webpage*/
+html {
+    background-color: black;
+}
+
+/*Create header background*/
+.main-header {
+    background-color: beige;
+    background-size: cover;
+    padding-top: 10px;
+    text-align: center;
+  
+}
+
+/*Create main section background */
+section {
+    background-color: beige;
+}
+
+/*Setting main-nav general settings*/
+.main-nav {
+    font-size: 1.5em;
+}
+
+/*Placing Page Navigation Buttons on same line*/
+.main-nav li{
+    display: inline;
+}
+
+/*Designing Page Navigation Buttons*/
+.main-nav a{
+    padding: .5em;
+    text-decoration: none;
+}
+
+/*Defining Page Navigation Buttons behavior on hover*/
+.main-nav a:hover {
+    background-color: #00000088;
+}
+
+
+
+/* Remove default styling on buttons */
+button {
+    all: unset
+}
+
+/* Adjusting Main Header settings*/
+h1 {
+    font-size: 3em;
+    font-weight: lighter;
+}
