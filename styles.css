@@ -1,8 +1,23 @@
-/*Setting general rules*/
+
+
+/* For future implementation of additional fonts
+@font-face {
+    font-family: ;
+    src: url();
+}*/
+
+/*-----GENERAL RULES-----*/
+@font-face {
+    font-family: 'Comorant-Regular';
+    src: url('Nuosu_SIL/NuosuSIL-Regular.ttf');
+}
+
+/*Setting general settings*/
 *{
     box-sizing: border-box;
     /*TODO: Find font that matches aesthetic*/
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Comorant-Regular';
+    
     color:#000000
 }
 
@@ -11,46 +26,51 @@ html {
     background-color: black;
 }
 
+/*Making right padding equal to natural left padding*/
+ul {
+    padding-inline-end: 40px;
+}
+
+/* Remove default styling on buttons */
+button {
+    all: unset
+}
+
+
+
+
+
+/*-----HEADER-----*/
+
 /*Create header background*/
 .main-header {
     background-color: beige;
     background-size: cover;
-    padding-top: 10px;
     text-align: center;
+    padding-top: 20px;
   
-}
-
-/*Create main section background */
-section {
-    background-color: beige;
 }
 
 /*Setting main-nav general settings*/
 .main-nav {
     font-size: 1.5em;
+
 }
 
-/*Placing Page Navigation Buttons on same line*/
+/*Placing Site Navigation Buttons on same line*/
 .main-nav li{
     display: inline;
 }
 
-/*Designing Page Navigation Buttons*/
+/*Designing Site Navigation Buttons*/
 .main-nav a{
     padding: .5em;
     text-decoration: none;
 }
 
-/*Defining Page Navigation Buttons behavior on hover*/
+/*Defining Site Navigation Buttons behavior on hover*/
 .main-nav a:hover {
     background-color: #00000088;
-}
-
-
-
-/* Remove default styling on buttons */
-button {
-    all: unset
 }
 
 /* Adjusting Main Header settings*/
@@ -58,3 +78,94 @@ h1 {
     font-size: 3em;
     font-weight: lighter;
 }
+
+/*Positioning name in header */
+.name-header {
+    text-align: center;
+    margin: 0%;
+}
+
+
+
+/*-----FOOTER-----*/
+
+/*Creating footer*/
+.main-footer{
+    text-align: center;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.main-footer li{
+    display: inline;
+}
+
+.main-footer a {
+    padding: .5em;
+}
+
+.main-footer img{
+    width: 40px;
+    height: 40px;
+}
+
+.main-footer ul{
+    padding-bottom: 40px;
+    padding-top: 0px;
+}
+
+
+
+
+
+/*-----BODY-----*/
+/*Create main section background */
+
+section {
+    background-color: beige;
+}
+
+
+
+
+
+/*-----PAGE: ABOUT-----*/
+
+.bio {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-img {
+    order: 1;
+    flex: 1 1 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.bio-text{
+    font-size: larger;
+    order: 2;
+    flex: 1 1 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+/*.bio-text p {
+    width: 100%;
+}*/
+
+
+/*Sans Font for Text, Casual Script for Titles*/
+
+
+
+
