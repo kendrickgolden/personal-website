@@ -1,34 +1,81 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang ="en">
     <head>
-        <title>Kendrick's Site</title>
-        <meta name="description" content="Personal website of aspiring multi-hyphentate, Kendrick Golden">
+        <title>About Me</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#intro">HOME</a></li>
+                    <li></div><a href="#bio">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact-info">CONTACT</a></li>
                 </ul>
             </nav>
             <!-- ** insert color block for header (instead of horizontal line) -->
-            <h1 class = "name-header"> Kendrick Golden</h1>
+          <!--  <div class="name-header"><h1>Kendrick G.</h1></div> -->
         </header>
-        <section>
-            <!--TODO: Decide on Front Page content-->
+        <div class="top-img"> <img src="Images/mansuetto-library.jpg"></div>
+        <section class="body-section" id="intro">
+            <div class="intro-text">
+                <h2> Welcome!</h2>
                 <p>
-                    This will be the landing page for my website.
+                    Hello, and welcome to the personal website of Kendrick Golden. Continue scrolling to learn more about my life, work experience, and projects!
                 </p>
+            </div>
+                <!--replace with professional profile pic-->
+                <div class="intro-img"> <img src="Images/UChicago Logo.jpg"></div>
         </section>
+
+        <section class="body-section" id="bio">
+            <div class="bio-text">
+                <h2> Personal Bio</h2>
+                <p class="bio-text">
+                    Kendrick Golden is a rising senior at the University of Chicago pursuing a degree in Economics with a specialization in Data Science, while also taking numerous Computer Science courses. Born in San Antonio, Texas he attended the John Jay Science and Engineering High School where he was an active member of the Robotics club and several volunteer groups. After graduating high school, he began attending the University of Chicago in the autumn 2019. Initially, he planned on solely studying economics, but after a summer internship doing data analysis he began to take interest in data science, and eventually computer science itself. Currently, he plans on pursuing a a job as a full-stack software developer in a city with an active tech environment. Kendrick always enjoys acquiring new skills and being able to apply these talents in creative ways. When he's not working on a software development project, he can usually be found dabbling in music production, fasion, or any other creative pursuit. For any offers or inquires, feel free to contact through any of the provided links.and being able to apply these talents in creative ways. 
+                </p>
+            </div>
+            <!--replace with  picture of self-->
+            <div class="bio-img"> <img src="Images/UChicago Logo.jpg"></div>
+        </section>
+
+        <section class="body-section" id="projects">
+            <h2>This Website</h2>
+            <p> Creating this website was my first foray into the world of web development, and has been a great learning experience. Working on this site has taught me a lot about web design while also helping me expand my HTML and CSS skills.</p>
+        </section>
+
+        <section class="body-section" id="contact-section">
+            <div><h2> Contact Me!</h2>
+                <p> Feel free to contact me at any of the following, or, for your convevience, simply leave a message below! </p>
+            </div>
+            <div id="contact-info">
+                <div class="contact-links">
+    
+                    <ul>
+                        <li><h3>email address</h3></li>
+                        <li><h3>phone number</h3></li>
+                        <li> LinkedIn</li>
+                    </ul>
+                </div>
+                <div class="message-form">
+                    <form action="https://kendrickgolden24@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="first-name" placeholder ="First Name" required>
+                        <input type="text" name="last-name" placeholder ="Last Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="message" placeholder="Message" required>
+                        <!--add thank you for submission page-->
+                        <button type="submit">Send</button>
+                   </form>
+                </div>
+            </div>    
+        </section>
+
         <footer class="main-footer">
-            <ul>
-                <li><a href ="https://www.linkedin.com/in/kendrick-golden-0734b214a" target="_blank"><img src="Images/LinkedIn Logo.png"></a></li>
-                <li><a href = "https://github.com/kendrickgolden" target="_blank"><img src="Images/GitHub Logo.png"></a></li>
-            </ul>
+            <a href ="https://www.linkedin.com/in/kendrick-golden-0734b214a" target="_blank"><img src="Images/LinkedIn Logo.png"></a>
+            <a href = "https://github.com/kendrickgolden" target="_blank"><img src="Images/GitHub Logo.png"></a>
         </footer>
     </body>
 </html>

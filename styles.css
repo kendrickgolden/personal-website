@@ -9,7 +9,7 @@
 /*-----GENERAL RULES-----*/
 @font-face {
     font-family: 'Comorant-Regular';
-    src: url('Nuosu_SIL/NuosuSIL-Regular.ttf');
+    src: url('Inter/static/Inter-Medium.ttf');
 }
 
 /*Setting general settings*/
@@ -17,18 +17,14 @@
     box-sizing: border-box;
     /*TODO: Find font that matches aesthetic*/
     font-family: 'Comorant-Regular';
-    
-    color:#000000
+    margin: 0;
+    padding: 0;
+    color: black;
 }
 
 /*Set background color of webpage*/
 html {
-    background-color: black;
-}
-
-/*Making right padding equal to natural left padding*/
-ul {
-    padding-inline-end: 40px;
+    background-color: white;
 }
 
 /* Remove default styling on buttons */
@@ -36,54 +32,100 @@ button {
     all: unset
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*-----BODY-----*/
+/*Create main section background */ 
 
 
 
 
 /*-----HEADER-----*/
-
+/* TODO: Make header shrink and stick to top of page when scrolling*/
 /*Create header background*/
-.main-header {
-    background-color: beige;
-    background-size: cover;
-    text-align: center;
-    padding-top: 20px;
-  
+header {
+    background-color: black;
+    /*display: flex;
+    flex-flow: column nowrap;*/
+    height: 100px;
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+/*Positioning name in header */
+/*.name-header {
+    position: relative;
+    height: 50%;
+    text-align: center;
+    flex-basis: 50%;
+    order: 1;
+}
+
+.name-header h1{
+    color: white;
+    font-size: 3em;
+    font-weight: lighter;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}*/
 
 /*Setting main-nav general settings*/
 .main-nav {
+   /* height: 50%;
     font-size: 1.5em;
-
+    flex-basis: 50%;
+    order: 2;
+    text-align: center;*/
+    font-size: 1.5em;
+    text-align: center;
+    height: 100%;
 }
 
 /*Placing Site Navigation Buttons on same line*/
-.main-nav li{
-    display: inline;
+.main-nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.main-nav li {
+    position: relative;
+     width: 15%;
+    height: 50%;
+     display: inline;
+     text-align: center;
 }
 
 /*Designing Site Navigation Buttons*/
 .main-nav a{
-    padding: .5em;
+    color: white;
     text-decoration: none;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+  
+    left:0;
+    right: 0;
 }
 
 /*Defining Site Navigation Buttons behavior on hover*/
-.main-nav a:hover {
-    background-color: #00000088;
+.main-nav li:hover {
+    background-color: #f0f0f044;
 }
 
-/* Adjusting Main Header settings*/
-h1 {
-    font-size: 3em;
-    font-weight: lighter;
+.nav-button{
+    width: 100%;
 }
 
-/*Positioning name in header */
-.name-header {
-    text-align: center;
-    margin: 0%;
-}
 
 
 
@@ -91,60 +133,66 @@ h1 {
 
 /*Creating footer*/
 .main-footer{
-    text-align: center;
-    background-color: grey;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: auto;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    background-color: black;  
+    padding: 1em;
 }
 
-.main-footer li{
-    display: inline;
+.main-footer a{
+    width: 30px;
+    height: 30px;
 }
-
-.main-footer a {
-    padding: .5em;
-}
-
 .main-footer img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
-.main-footer ul{
-    padding-bottom: 40px;
-    padding-top: 0px;
-}
-
-
-
-
-
-/*-----BODY-----*/
-/*Create main section background */
-
-section {
-    background-color: beige;
-}
-
-
-
-
-
-/*-----PAGE: ABOUT-----*/
-
-.bio {
-    margin: 20px;
+.body-section {
     padding: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
-.bio-img {
+
+/*-----SECTION: INTRO-----*/
+.intro-img {
     order: 1;
+    flex: 1 1 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.intro-text{
+    font-size: larger;
+    order: 2;
+    flex: 1 1 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.intro-text p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-----SECTION: ABOUT-----*/
+
+
+
+.bio-img {
+    order: 2;
     flex: 1 1 50%;
     padding: 10px;
     text-align: center;
@@ -153,18 +201,28 @@ section {
 
 .bio-text{
     font-size: larger;
-    order: 2;
+    order: 1;
     flex: 1 1 50%;
     padding: 10px;
     text-align: center;
 }
 
-/*.bio-text p {
-    width: 100%;
-}*/
+.bio-text p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#contact-section {
+    flex-direction: column;
+}
 
-/*Sans Font for Text, Casual Script for Titles*/
+#contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
