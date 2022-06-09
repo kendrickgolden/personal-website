@@ -24,7 +24,7 @@
 
 /*Set background color of webpage*/
 html {
-    background-color: white;
+    background-color: #f5deb323;
 }
 
 /* Remove default styling on buttons */
@@ -36,11 +36,50 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    background-color: white;
+    gap: 10px;
 }
 
 /*-----BODY-----*/
 /*Create main section background */ 
+.body-section {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
+.top-img {
+    background-color:rgba(211, 211, 211, 0.377);
+}
+
+#intro {
+   /* background:linear-gradient(#f5deb3,#f5deb323);*/
+    background-color: #f5deb3;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#intro p {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#intro img{
+    border-radius: 25%;
+    height: 50%;
+    width: 50%;
+}
+
+#bio {  
+    background-color: #f5deb3;
+    border-radius: 10px;
+}
 
 
 
@@ -131,8 +170,83 @@ header {
 
 /*-----FOOTER-----*/
 
+
+#main-footer {
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#main-footer * {
+    color:white;
+}
+
+#contact-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: space-between;
+}
+
+#contact-info *{
+    width: 50%;
+    font-weight: lighter;
+    align-items: right;
+}
+
+#contact-info li {
+    display: inline;
+}
+
+#contact-info ul {
+     width: 100%;
+}
+
+#contact-info li {
+    width: 100%;
+}
+
+#contact-links h3 {
+    width: 100%;
+    text-align: center;
+}
+.links ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+
+#web-links ul{
+    width: 100%;
+}
+
+#web-links img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.header-img {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
 /*Creating footer*/
-.main-footer{
+/*.main-footer{
     display: flex;
     flex-flow: row wrap;
     margin-top: auto;
@@ -150,17 +264,41 @@ header {
 .main-footer img{
     width: 30px;
     height: 30px;
+}*/
+
+/*-----SECTION: CONTACT-----*/
+/*#footer-section {
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-.body-section {
-    padding: 10px;
+#footer-section * {
+    color: white;
+    font-weight: lighter;
+}
+
+#contact-info {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin-right: 15%;
-    margin-left: 15%;
 }
+
+#contact-links  {
+width: 50%;
+}
+
+#contact-links ul {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#contact-links li {
+    display: inline;
+}*/
 
 
 /*-----SECTION: INTRO-----*/
@@ -189,8 +327,6 @@ header {
 
 /*-----SECTION: ABOUT-----*/
 
-
-
 .bio-img {
     order: 2;
     flex: 1 1 50%;
@@ -213,17 +349,77 @@ header {
     margin-right: auto;
 }
 
-#contact-section {
-    flex-direction: column;
+
+/*-----SECTION: PROJECTS-----*/
+
+#projects {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    aspect-ratio: 16/9;
 }
 
-#contact-info {
+#projects ul{
+    position: relative;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    gap: 25px;
+    height: 80%;
+}
+
+#projects li {
+    position: relative;
+    display: inline;
+    height: 100%;
+    width: 30%;
+}
+
+.project {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(173, 169, 169, 0.096);
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px  gray;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.project h1{
+    order: 1;
+}
+
+.project img{
+    order: 2;
+}
+
+.project p {
+    order: 3;
+    font-size: large;
 }
 
 
 
+/*#message-form {
+    width: 50%;
+    display: grid;
+    grid-template: 
+        "first-name last-name" 1fr
+        "email-address" 1fr
+        "message" 1fr
+        / 1fr 1fr;
+    gap: 10px 10px;
+    place-items: center;
+    place-content: center;
+}
 
+#message-form #first-name{
+    grid-area: "first-name";
+}
+
+#message-form #last-name{
+    grid-area: "last-name";
+}*/
