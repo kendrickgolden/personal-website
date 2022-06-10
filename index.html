@@ -6,50 +6,56 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="main-header">
+        <header id="main-header">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#intro">HOME</a></li>
-                    <li><a href="#bio">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact-info">CONTACT</a></li>
+                    <li><a href="#intro-anchor">HOME</a></li>
+                    <li><a href="#bio-anchor">ABOUT</a></li>
+                    <li><a href="#projects-anchor">PROJECTS</a></li>
+                    <li><a href="#contact-anchor">CONTACT</a></li>
                 </ul>
             </nav>
-            <!-- ** insert color block for header (instead of horizontal line) -->
-          <!--  <div class="name-header"><h1>Kendrick G.</h1></div> -->
         </header>
-        <div class="top-img"> <img src="Images/mansuetto-library.jpg"></div>
 
+        <div id="body-wo-header">
+        <div id="top-img"> <img src="Images/mansuetto-library.jpg"></div>
+
+        <a class="section-anchor" id="intro-anchor"></a>
         <section class="body-section" id="intro">
-            <div class="intro-text">
-                <h2> Welcome!</h2>
-                <p>
+            <div id="intro-text">
+                <div id="welcome"><p> Welcome!</p></div>
+                <div id="welcome-text"><p>
                     Hello, and welcome to the personal website of Kendrick Golden. Continue scrolling to learn more about my life, work experience, and projects!
-                </p>
+                </p></div>
             </div>
                 <!--replace with professional profile pic-->
-                <div class="intro-img"> <img src="Images/Temporary-Personal-Pic.jpg"></div>
+                <div id="intro-img"> <img src="Images/Temporary-Personal-Pic.jpg"></div>
         </section>
 
+        <a class="section-anchor" id="bio-anchor"></a>
         <section class="body-section" id="bio">
             <div class="bio-text">
                 <h2> Personal Bio</h2>
                 <p class="bio-text">
-                    Kendrick Golden is a rising senior at the University of Chicago pursuing a degree in Economics with a specialization in Data Science, while also taking numerous Computer Science courses. Born in San Antonio, Texas he attended the John Jay Science and Engineering High School where he was an active member of the Robotics club and several volunteer groups. After graduating high school, he began attending the University of Chicago in the autumn 2019. 
-                </p>
-                <p>    
-                    Initially, he planned on solely studying economics, but after a summer internship doing data analysis he began to take interest in data science, and eventually computer science itself. Currently, he plans on pursuing a a job as a full-stack software developer in a city with an active tech environment. Kendrick always enjoys acquiring new skills and being able to apply these talents in creative ways. When he's not working on a software development project, he can usually be found dabbling in music production, fasion, or any other creative pursuit. 
+                    Kendrick Golden is a rising senior at the University of Chicago pursuing a degree in Economics with a specialization in Data Science, while also taking numerous Computer Science courses. Born in San Antonio, Texas he attended the John Jay Science and Engineering High School where he was an active member of the Robotics club and several volunteer groups. 
+                    <br>
+                    <br>
+                    After graduating high school, he began attending the University of Chicago in the autumn 2019. Initially, he planned on solely studying economics, but after a summer internship doing data analysis he began to take interest in data science, and eventually computer science itself. 
+                    <br>
+                    <br>
+                    Currently, he plans on pursuing a a job as a full-stack software developer in a city with an active tech environment. Kendrick always enjoys acquiring new skills and being able to apply these talents in creative ways. When he's not working on a software development project, he can usually be found dabbling in music production, fashion, or any other creative pursuit. 
                 </p>
             </div>
             <!--replace with  picture of self-->
             <div class="bio-img"> <img src="Images/UChicago Logo.jpg"></div>
         </section>
 
+        <a class="section-anchor" id="projects-anchor"></a>
         <section class="body-section" id="projects">
             <ul>
                 <li><div class="project">           
                         <h2>This Website</h2>
-                        <div> <img src="Images/UChicago Logo.jpg"></div>
+                        <div class="project-img"> <img src="Images/website-img.png"></div>
                         <p> Creating this website was my first foray into the world of web development, and has been a great learning experience. Working on this site has taught me a lot about web design while also helping me expand my HTML and CSS skills.</p> 
                 </div></li>
                 <li><div class="project">           
@@ -63,6 +69,7 @@
             </ul>
         </section>
 
+        <a class="section-anchor" id="contact-anchor"></a>
         <footer id="main-footer">
                 <h2> Contact Me!</h2>
                 <p> If you have inquiries or offers feel free to contact me through any of the following links! </p>
@@ -75,8 +82,8 @@
                     </div>   
                     <div class="links" id="web-links">
                         <ul>
-                            <li><div class="header-img"><h3>LinkedIn:</h3><a href ="https://www.linkedin.com/in/kendrick-golden-0734b214a" target="_blank"><img src="Images/LinkedIn Logo.png"></a></div></li>
-                            <li><div class="header-img"><h3>GitHub:</h3><a href = "https://github.com/kendrickgolden" target="_blank"><img src="Images/GitHub Logo.png"></a></div><li>
+                            <li><a href ="https://www.linkedin.com/in/kendrick-golden-0734b214a" target="_blank"><img src="Images/LinkedIn-Logo.png"></a></li>
+                            <li><a href = "https://github.com/kendrickgolden" target="_blank"><img src="Images/GitHub-Logo.png"></a></li>
                         </ul>
                     </div>
                 </div>       
@@ -90,9 +97,8 @@
                             add thank you for submission page
                             <button type="submit">Send</button>
                        </form>
-                    </div>-->
-                  
-        </section>
+                    </div>-->  
         </footer>
+    </div>
     </body>
 </html>
