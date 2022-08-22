@@ -253,10 +253,17 @@ header {
     width: 30%;
 }
 
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+
 .project {
     position: relative;
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     display: flex;
     flex-flow: column nowrap;
     background-color: rgb(245, 245, 245);
@@ -267,6 +274,7 @@ header {
     justify-content: space-between;
 }
 
+
 .project h1{
     order: 1;
 }
@@ -275,6 +283,8 @@ header {
     order: 2;
     width: 100%; 
     overflow: hidden; 
+    border-style: solid;
+    border-width: 1px;
 }
 
 .project-img {
@@ -282,11 +292,16 @@ header {
     text-align: center;
 }
 
-
+.project-description {
+    position: relative;
+    height: 33%;
+}
 
 .project p {
+    position: relative;
     order: 3;
     font-size: large;
+   
 }
 
 
