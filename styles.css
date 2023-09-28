@@ -10,6 +10,12 @@ button {
     all: unset;
 }
 
+body {
+    background-color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
 
 header {
     padding-left: 15%;
@@ -20,16 +26,28 @@ header {
     z-index: 9999;
     background-color: white;
     height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+    gap: 25px;
 }
 
 header h1 {
     font-size: 70px;
     font-weight: 100;
+    margin-right: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    border-bottom: solid 1px;
 }
 
 #content-body {
     font-family: "Chakra Petch", sans-serif;
-    padding-top: 60px;
+    padding-top: 110px;
     padding-left: 15%;
     padding-right: 15%;
     display: flex;
@@ -42,32 +60,39 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    gap: 20px;
 }
 
 #profile-shot {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
 
 #profile-shot img {
-    width: 500px;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 #profile-desc {
     position: relative;
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    /* background-color: rgba(128, 128, 128, 0.116);*/
+    padding: 5%;
+    color: black;
+    border: solid 1px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.116);
+    background-color: rgba(0, 153, 255, 0.018);
+    aspect-ratio: 1/1;
 }
 
 #profile-desc h3 {
-    font-size: 48px;
+    position: relative;
+    font-size: 3rem;
     font-weight: 500;
     text-align: center;
 }
@@ -75,6 +100,27 @@ header h1 {
 #profile-desc p {
     font-size: 24px;
     text-align: center;
+}
+
+#profile-desc #welcome {
+    font-size: 20px;
+}
+
+#profile-btns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#profile-desc button {
+    border: solid 1px;
+    border-radius: 3px;
+    font-size: 24px;
+    background-color: white;
+    text-align: center;
+    height: 100px;
 }
 
 #bio {
@@ -91,6 +137,7 @@ header h1 {
 
 #bio p {
     font-size: 21px;
+    
 }
 
 #skills {
