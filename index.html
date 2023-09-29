@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Kendrick Golden Portfolio Site</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -12,78 +12,215 @@
 
   <body>
     <header>
-      <h1>KENDRICK GOLDEN</h1>
-      <a href="#">PROJECTS</a>
+      <a href="./index.html" id="home-link">
+        <h1>KENDRICK GOLDEN</h1>
+      </a>
+      <a href="./pages/projects.html">PROJECTS</a>
       <a href="#">CONTACT</a>
     </header>
-    <div id="content-body">
-      <div id="about">
-        <div id="profile-shot">
-          <img src="Images/Temporary-Personal-Pic.jpg" alt="profile" />
+    <div id="content">
+      <div id="body">
+        <div id="about">
+          <div id="profile-desc">
+            <div id="role">
+              <h3>Front End Developer</h3>
+              <p>with experience in data analysis and fullstack development</p>
+            </div>
+            <p id="welcome">
+              Welcome to my website! I like working on projects of any kind and
+              am open to work! Check my work and feel fre to contact me!
+            </p>
+            <div id="profile-links">
+              <a href="./pages/projects.html">See Work</a>
+              <a href="#">Resume</a>
+            </div>
+          </div>
+          <div id="profile-shot">
+            <img src="Images/Temporary-Personal-Pic.jpg" alt="profile" />
+          </div>
         </div>
-        <div id="profile-desc">
-          <div id="role">
-          <h3>Front End Developer</h3>
-          <p>with experience in data analysis and fullstack development</p>
+        <div id="bio">
+          <p>
+            Hello! Welcome to the website of Kendrick Golden. I gradutated from
+            the University of Chicago in the summer of 2023 with a Bachelor's in
+            Economics and a Specialization in Data Science, as well as taking
+            several computer science courses and working on personal software
+            projects.
+            <br />
+            <br />
+            I have professional and personal experience in several different
+            programming languages including Java, Python, and C. Over the past
+            year, I have focused on improving my web development skills through
+            the creation of several projects and hope to leverage my experience
+            into a entry level front end development position.
+          </p>
+          <div id="skills">
+            <h2>Skilled In:</h2>
+            <ul class="skills-list">
+              <li>
+                <span class="skill">
+                  <img
+                    src="./Images/Logos/JavaScript.png"
+                    alt="JavaScript-logo"
+                  />
+                  <h5>JavaScript</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/HTML.png" alt="HTML-logo" />
+                  <h5>HTML</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/CSS.png" alt="CSS-logo" />
+                  <h5>CSS</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/React.png" alt="React-logo" />
+                  <h5>React</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/NodeJS.png" alt="NodeJS-logo" />
+                  <h5>NodeJS</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/MongoDB.png" alt="MongoDB-logo" />
+                  <h5>MongoDB</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/Python.jpeg" alt="Python-logo" />
+                  <h5>Python</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/Java.png" alt="Java-logo" />
+                  <h5>Java</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/Git.png" alt="Git-logo" />
+                  <h5>Git</h5>
+                </span>
+              </li>
+            </ul>
+            <h2>Experience With:</h2>
+            <ul class="skills-list">
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/SQL.png" alt="SQL-logo" />
+                  <h5>SQL</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/C.png" alt="C-logo" />
+                  <h5>C</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/Tableau.png" alt="Tableau-logo" />
+                  <h5>Tableau</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/Bash.png" alt="Bash-logo" />
+                  <h5>Bash</h5>
+                </span>
+              </li>
+              <li>
+                <span class="skill">
+                  <img src="./Images/Logos/Heroku.png" alt="Heroku-logo" />
+                  <h5>Heroku</h5>
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-          <p id="welcome">Welcome to my website! I like working on projects of any kind and am open to work! Check my work and feel fre to contact me!</p>
-          <div id="profile-btns">
-            <button>See Work</button> <button>Resume</button>
+        <div id="projects">
+          <h2>PROJECTS</h2>
+          <div id="project-containter">
+            <div class="project">
+              <div class="project-overview">
+                <h3>Spotify Playlist Assistant</h3>
+                <div class="project-tools-container">
+                  Tools Used
+                  <ul class="project-tools">
+                    <li>
+                      <img src="./Images/Logos/React.png" alt="React-logo" />
+                    </li>
+                    <li>
+                      <img
+                        src="./Images/Logos/MongoDB.png"
+                        alt="MongoDB-logo"
+                      />
+                    </li>
+                    <li>
+                      <img src="./Images/Logos/NodeJS.png" alt="NodeJS-logo" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                class="project-img"
+                src="./Images/Spotify-Playlist-Assistant-Img1.png"
+                alt="Spotify Site 1"
+              />
+              <button class="project-btn">DETAILS</button>
+            </div>
+            <div class="project">
+              <div class="project-overview">
+                <h3>Idle Typing Game</h3>
+                <div class="project-tools-container">
+                  Tools Used
+                  <ul class="project-tools">
+                    <li>
+                      <img src="./Images/Logos/HTML.png" alt="HTML-logo" />
+                    </li>
+                    <li>
+                      <img src="./Images/Logos/CSS.png" alt="CSS-logo" />
+                    </li>
+                    <li>
+                      <img src="./Images/Logos/JavaScript.png" alt="JS-logo" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                class="project-img"
+                src="./Images/Typing-Img1.png"
+                alt="Typing Site 1"
+              />
+              <button class="project-btn">DETAILS</button>
+            </div>
           </div>
         </div>
       </div>
-      <div id="bio">
-        <p>
-          Hello! Welcome to the website of Kendrick Golden. I gradutated from
-          the University of Chicago in the summer of 2023 with a Bachelor's in
-          Economics and a Specialization in Data Science, as well as taking
-          several computer science courses and working on personal software
-          projects.
-          <br />
-          <br />
-          I have professional and personal experience in several different
-          programming languages including Java, Python, and C. Over the past
-          year, I have focused on improving my web development skills through
-          the creation of several projects and hope to leverage my experience
-          into a entry level front end development position.
-        </p>
-        <div id="skills">
-          <h2>Proficient In</h2>
-          <div id="skills-list">
-            <span class="skill">JavaScript</span><span class="skill">HTML</span
-            ><span class="skill">CSS</span><span class="skill">NodeJS</span>
-          </div>
-        </div>
-      </div>
-      <div id="projects">
-        <h2>PROJECTS</h2>
-        <div id="project-containter">
-          <div class="project">
-            <h3>Spotify Playlist Assistant</h3>
-            <img
-              src="./Images/Spotify-Playlist-Assistant-Img1.png"
-              alt="Spotify Site 1"
-            />
-            <button class="project-btn">DETAILS</button>
-          </div>
-          <div class="project">
-            <h3>Idle Typing Game</h3>
-            <img src="./Images/Typing-Img1.png" alt="Typing Site 1" />
-            <button class="project-btn">DETAILS</button>
-          </div>
-        </div>
-      </div>
+
       <div id="footer">
         <h5>© 2023 Kendrick Golden</h5>
-        <a href="./Resume.docx" id="resume">Resume</a>
+        <!-- <a href="./Resume.docx" id="resume">Resume</a> -->
         <a href="https://github.com/kendrickgolden"
-          ><img src="./Images/GitHub-Logo.png" alt="Github Logo"
+          ><img src="./Images/Logos/GitHub-Logo.png" alt="Github Logo"
         /></a>
         <a href="https://www.linkedin.com/in/kendrick-golden-0734b214a/"
-          ><img src="./Images/LinkedIn-Logo.png" alt="LinkedIn Logo"
+          ><img src="./Images/Logos/LinkedIn-Logo.png" alt="LinkedIn Logo"
         /></a>
         <a href="mailto: kendrickgolden24@gmail.com"
-          ><img src="./Images/Email-Logo.png"
+          ><img src="./Images//Logos/Email-Logo.png"
         /></a>
       </div>
     </div>
