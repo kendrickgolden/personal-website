@@ -270,12 +270,16 @@ header a {
 }
 
 .project-btn {
-    width: 100px;
-    height: 30px;
+    width: 106px;
+    height: 36px;
     border-style: solid;
     border-radius: 10px;
     text-align: center;
     font-size: 24px;
+    text-decoration: none;
+    color: black;
+    padding: none;
+    top: -250px;
 }
 
 #footer {
@@ -336,6 +340,11 @@ header a {
 .project-right {
     grid-template-columns: 1fr 2fr;
 
+}
+
+#spotify-playlist-assistant {
+    padding-top: 110px;
+    margin-top: -110px;
 }
 
 .project-display {
