@@ -170,6 +170,7 @@ header a {
 #experience-with {
     margin-top: 20px;
 }
+
 .skills-list {
     list-style-type: none;
     display: flex;
@@ -327,7 +328,8 @@ header a {
 
 }
 
-.project-left, .project-right{
+.project-left,
+.project-right {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -337,6 +339,7 @@ header a {
     grid-template-columns: 2fr 1fr;
 
 }
+
 .project-right {
     grid-template-columns: 1fr 2fr;
 
@@ -377,23 +380,6 @@ header a {
     padding-left: 5%;
 }
 
-.project-info a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    width: 150px;
-    height: 60px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-}
-
-.project-info a img {
-    max-height: 90%;
-}
 
 .project-info span {
     text-align: center;
@@ -410,6 +396,38 @@ header a {
 
 #project-content .skill h5 {
     font-size: 16px;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-info a {
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.project-info a img {
+    max-height: 90%;
+}
+
+
+
+.git-repo {
+    background-color: black;
+}
+
+.visit-site {
+    background-color: rgb(7, 98, 6);
 }
 
 .project-footer {
